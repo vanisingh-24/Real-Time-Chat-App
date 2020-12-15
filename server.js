@@ -20,7 +20,7 @@ io.on('connection', socket=>{
        const user = userJoin(socket.id, username, room);
 
        socket.join(user.room);
-
+       
        //Welcome current user
        socket.emit('message', formatMessage(botName,'Welcome to the chat'));  //single client
 
