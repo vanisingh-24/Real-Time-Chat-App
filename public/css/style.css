@@ -7,7 +7,6 @@
 	--light-color: #2E8B57;
 	--success-color: #5cb85c;
 	--error-color: #d9534f; 
-
 }
 
 * {
@@ -47,8 +46,9 @@ a {
 .chat-container {
 	max-width: 1100px;
 	background: #fff;
-	margin: 30px auto;
+	margin: 80px auto;
 	overflow: hidden;
+	border-radius: 8px;
 }
 
 .chat-header {
@@ -142,6 +142,7 @@ h1{
 	max-width: 550px;
 	margin: 80px auto;
 	color: #fff;
+	border-radius: 8px;
 }
 
 .join-header {
@@ -179,6 +180,7 @@ h1{
 	height: 40px;
 	width: 100%;
 	border-radius: 5px;
+	border-color: rgb(118, 118, 118);
 }
 
 .join-main select {
@@ -187,6 +189,7 @@ h1{
 	height: 40px;
 	width: 100%;
 	border-radius: 5px;
+	border-color: rgb(118, 118, 118);
 }
 
 .join-main .btn {
@@ -205,5 +208,14 @@ h1{
 
 	.chat-sidebar {
 		display: none;
+	}
+}
+
+@media (min-width: 500px){
+	body{
+		background-image: url('/img/back.jpg');
+	    background-size: cover;
+		background-repeat: no-repeat;
+		height: 830px;
 	}
 }
